@@ -1,15 +1,7 @@
 import express from "express";
-import {
-  getAllUsers,
-  getUser,
-  createUser,
-  updateUser,
-  deleteUser,
-} from "../controllers/user_controller.ts"; 
+import { getAllUsers, getUser, createUser, updateUser, deleteUser } from "../controllers/user_controller.ts"; 
 
 const router = express.Router();
-
-// Define routes
 router.get("/", getAllUsers);
 router.get("/:id", getUser);
 router.post("/", createUser);
